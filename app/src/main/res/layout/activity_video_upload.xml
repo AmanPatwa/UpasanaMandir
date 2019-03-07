@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="patwa.aman.com.upasanamandir.VideoUploadActivity">
+
+    <Button
+        android:id="@+id/choose_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_file"/>
+
+    <EditText
+        android:id="@+id/edt_video_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/choose_video"
+        android:layout_toEndOf="@+id/choose_video"
+        android:hint="@string/enter_name_of_video"
+        android:layout_marginStart="16dp"/>
+
+    <VideoView
+        android:id="@+id/video_view_upload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edt_video_name"
+        android:layout_above="@+id/video_progress"
+        android:layout_marginTop="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/video_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_video_upload"
+        android:layout_alignEnd="@+id/edt_video_name"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btn_video_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/choose_video"
+        android:text="@string/upload" />
+
+    <TextView
+        android:id="@+id/txt_show_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_video_upload"
+        android:layout_below="@+id/video_progress"
+        android:layout_marginStart="31dp"
+        android:layout_toEndOf="@+id/btn_video_upload"
+        android:gravity="center"
+        android:text="@string/show_videos"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+</RelativeLayout>

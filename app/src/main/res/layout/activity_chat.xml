@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/holo_orange_light"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="patwa.aman.com.upasanamandir.ChatActivity">
+
+    <include layout="@layout/navigation_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include2" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/chat_message_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include2">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/include2"
+            android:layout_marginBottom="49dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/chat_bg"
+        android:weightSum="10">
+
+        <ImageButton
+            android:id="@+id/chat_plus"
+            android:layout_width="30dp"
+            android:minWidth="30dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Send"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:src="@drawable/plus" />
+
+        <EditText
+            android:id="@+id/chat_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionUnspecified"
+            android:imeActionId="@integer/keyboard"
+            android:imeActionLabel="Send"
+            android:inputType="textCapSentences|textAutoCorrect|textAutoComplete"
+            android:maxLines="5"
+            android:textColor="@android:color/background_dark"
+            android:textSize="25sp"
+            android:layout_weight="8" />
+
+
+        <ImageButton
+            android:id="@+id/chat_send"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:contentDescription="Send"
+            android:layout_weight="1"
+            android:minWidth="30dp"
+            android:src="@drawable/sendbutton" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

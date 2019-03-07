@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="@string/home"></item>
+
+    <item
+        android:id="@+id/nav_course"
+        android:icon="@drawable/ebook"
+        android:title="@string/course"></item>
+
+    <item
+        android:id="@+id/nav_religiousActivities"
+        android:icon="@drawable/calendar"
+        android:title="@string/activities"></item>
+
+    <item
+        android:id="@+id/nav_gallery"
+        android:icon="@drawable/image"
+        android:title="@string/gallery"></item>
+
+    <item
+        android:id="@+id/nav_videos"
+        android:icon="@drawable/videofile"
+        android:title="@string/videos"></item>
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/chat"
+        android:title="@string/chat_box"></item>
+
+    <item
+        android:id="@+id/nav_donateUs"
+        android:icon="@drawable/solidarity"
+        android:title="@string/donate_us"></item>
+
+    <item
+        android:id="@+id/nav_contactUs"
+        android:icon="@drawable/phone"
+        android:title="@string/contact_us"></item>
+
+    <item
+        android:id="@+id/nav_locateUs"
+        android:icon="@drawable/pin"
+        android:title="@string/locate_us"></item>
+
+
+</menu>

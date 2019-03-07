@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1054191562264",
+    "firebase_url": "https://upasanamandir-33cad.firebaseio.com",
+    "project_id": "upasanamandir-33cad",
+    "storage_bucket": "upasanamandir-33cad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054191562264:android:69d08a602beed88c",
+        "android_client_info": {
+          "package_name": "patwa.aman.com.upasanamandir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054191562264-svo1me3li503su61oatj1dfniknehb2j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "patwa.aman.com.upasanamandir",
+            "certificate_hash": "7e1dba6778ef26cea5a35aa89e9dff2dc430a27f"
+          }
+        },
+        {
+          "client_id": "1054191562264-cgmalcd98668sp7jru3jq2vhhhfjjlhi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEwsZLtlyQzoPvuKJRWq1AU7LxgWTjNOU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054191562264-cgmalcd98668sp7jru3jq2vhhhfjjlhi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
